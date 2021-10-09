@@ -2,7 +2,8 @@ export const msalConfig = {
     auth: {
       clientId: "08411a04-4a58-4b99-b77a-18666beeac96",
       authority: "https://login.microsoftonline.com/1b16ab3e-b8f6-4fe3-9f3e-2db7fe549f6a/",
-      redirectUri: "http://localhost:3000/validate-vaccine-certificate",
+      redirectUri: window.location.origin+"/validate-vaccine-certificate",
+      socketUri: window.location.hostname === 'localhost' ? 'http://localhost:3000/validate-vaccine-certificate' : window.location.origin+"/validate-vaccine-certificate",
     },
     cache: {
       cacheLocation: "sessionStorage", // This configures where your cache will be stored
