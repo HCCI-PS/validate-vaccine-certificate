@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { useMsal } from "@azure/msal-react";
 import "./index.css";
 import CertificateValidImg from "../../assets/img/certificate-valid.svg";
 import CertificateInValidImg from "../../assets/img/certificate-invalid.svg";
@@ -16,6 +17,7 @@ import {useHistory} from "react-router-dom";
 import axios from "axios";
 import {ordinal_suffix_of} from "../../utils/utils";
 import {Loader} from "../Loader";
+import { serverUrl } from "../../Api";
 
 const jsigs = require('jsonld-signatures');
 const {RSAKeyPair} = require('crypto-ld');
@@ -58,6 +60,7 @@ export const CertificateStatus = ({certificateData, goBack}) => {
     const [isLoading, setLoading] = useState(false);
     const [isValid, setValid] = useState(false);
     const [data, setData] = useState({});
+    const {accounts} = useMsal();
     const history = useHistory();
 
     setTimeout(()=>{
@@ -71,6 +74,13 @@ export const CertificateStatus = ({certificateData, goBack}) => {
             console.log(e);
         }
     }, 100)
+
+    useEffect(()=>{
+        if(isValid){
+            var res = axios.post(serverUrl,{employeeName: accounts[0]?.name, Status:"Valid"});
+            console.log(res);
+        }
+    },[isValid]);
 
     const dispatch = useDispatch();
     useEffect(() => {

@@ -7,22 +7,22 @@ import {
   AuthenticatedTemplate,
   UnauthenticatedTemplate,
 } from "@azure/msal-react";
-import { PageLayout } from "./components/PageLayout";
+import { ThemeProvider } from '@material-ui/core/styles';
+import { SignIn } from "./components/SignIn";
+import {theme} from './globalTheme';
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <PageLayout>
-          <AuthenticatedTemplate>
-            <VerifyCertificate />
-          </AuthenticatedTemplate>
-          <UnauthenticatedTemplate>
-            <p>You are not signed in! Please sign in.</p>
-          </UnauthenticatedTemplate>
-        </PageLayout>
-      </div>
-    </Provider>
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <AuthenticatedTemplate>
+          <VerifyCertificate />
+        </AuthenticatedTemplate>
+        <UnauthenticatedTemplate>
+          <SignIn />
+        </UnauthenticatedTemplate>
+      </Provider>
+    </ThemeProvider>
   );
 }
 
