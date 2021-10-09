@@ -1,6 +1,6 @@
 {
   "name": "verification",
-  "homepage": "https://cnuis2cool.github.io/validate-vaccine-certificate",
+  "homepage": "https://hcci-ps.github.io/validate-vaccine-certificate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

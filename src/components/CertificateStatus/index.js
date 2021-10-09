@@ -9,7 +9,7 @@ import NextArrowImg from "../../assets/img/next-arrow.svg";
 import config from "../../config";
 import {pathOr} from "ramda";
 import {CustomButton} from "../CustomButton";
-import {CertificateDetailsPaths} from "../../constants";
+import {CertificateDetailsPaths, CertificateDetailsPathsUpdated} from "../../constants";
 import {useDispatch} from "react-redux";
 import {addEventAction, EVENT_TYPES} from "../../redux/reducers/events";
 import {useHistory} from "react-router-dom";
@@ -77,6 +77,7 @@ export const CertificateStatus = ({certificateData, goBack}) => {
         setLoading(true);
         async function verifyData() {
             try {
+                console.log(`Data: ${certificateData}`);
                 const signedJSON = JSON.parse(certificateData);
                 const publicKey = {
                     '@context': jsigs.SECURITY_CONTEXT_URL,
@@ -107,6 +108,7 @@ export const CertificateStatus = ({certificateData, goBack}) => {
                         console.log('Signature verified.');
                         setValid(true);
                         setData(signedJSON);
+                        console.log(`** Data: ${JSON.stringify(signedJSON)}`);
                         dispatch(addEventAction({
                             type: EVENT_TYPES.VALID_VERIFICATION,
                             extra: signedJSON.credentialSubject
@@ -186,8 +188,9 @@ export const CertificateStatus = ({certificateData, goBack}) => {
             {
                 isValid && <table className="mt-3">
                     {
-                        Object.keys(CertificateDetailsPaths).map((key, index) => {
-                            const context = CertificateDetailsPaths[key];
+                        Object.keys(CertificateDetailsPathsUpdated).map((key, index) => {
+                            // const context = CertificateDetailsPaths[key];
+                            const context = CertificateDetailsPathsUpdated[key];
                             const value = context.format(pathOr("NA", context.path, data));
                             const show = value !== "NA" || (value === "NA" && !context.optional)
                             return (

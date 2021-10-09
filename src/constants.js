@@ -72,3 +72,20 @@ export const CertificateDetailsPaths = {
         optional: true
     }
 };
+
+export const CertificateDetailsPathsUpdated = {
+    "Name": {
+        path: ["credentialSubject", "name"],
+        format: (data) => (data)
+    },
+    "Vaccination Status": {
+        path: ["evidence", "0"],
+        format: (data) => {
+            if (data.dose !== data.totalDoses) {
+                return "Partially Vaccinated"
+            } else {
+                return "Fully Vaccinated"
+            }
+        }
+    }
+};
