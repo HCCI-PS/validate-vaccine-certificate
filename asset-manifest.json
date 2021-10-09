@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/validate-vaccine-certificate/static/css/main.fa523b89.chunk.css",
-    "main.js": "/validate-vaccine-certificate/static/js/main.9c4813ed.chunk.js",
-    "main.js.map": "/validate-vaccine-certificate/static/js/main.9c4813ed.chunk.js.map",
-    "runtime-main.js": "/validate-vaccine-certificate/static/js/runtime-main.71763e8d.js",
-    "runtime-main.js.map": "/validate-vaccine-certificate/static/js/runtime-main.71763e8d.js.map",
+    "main.css": "/validate-vaccine-certificate/static/css/main.f0e84019.chunk.css",
+    "main.js": "/validate-vaccine-certificate/static/js/main.cae4a706.chunk.js",
+    "main.js.map": "/validate-vaccine-certificate/static/js/main.cae4a706.chunk.js.map",
+    "runtime-main.js": "/validate-vaccine-certificate/static/js/runtime-main.6992a02e.js",
+    "runtime-main.js.map": "/validate-vaccine-certificate/static/js/runtime-main.6992a02e.js.map",
     "static/css/2.ef9168ec.chunk.css": "/validate-vaccine-certificate/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.c1478191.chunk.js": "/validate-vaccine-certificate/static/js/2.c1478191.chunk.js",
-    "static/js/2.c1478191.chunk.js.map": "/validate-vaccine-certificate/static/js/2.c1478191.chunk.js.map",
-    "static/js/3.dd5941e4.chunk.js": "/validate-vaccine-certificate/static/js/3.dd5941e4.chunk.js",
-    "static/js/3.dd5941e4.chunk.js.map": "/validate-vaccine-certificate/static/js/3.dd5941e4.chunk.js.map",
+    "static/js/2.597a7a0d.chunk.js": "/validate-vaccine-certificate/static/js/2.597a7a0d.chunk.js",
+    "static/js/2.597a7a0d.chunk.js.map": "/validate-vaccine-certificate/static/js/2.597a7a0d.chunk.js.map",
+    "static/js/3.74996c2c.chunk.js": "/validate-vaccine-certificate/static/js/3.74996c2c.chunk.js",
+    "static/js/3.74996c2c.chunk.js.map": "/validate-vaccine-certificate/static/js/3.74996c2c.chunk.js.map",
     "index.html": "/validate-vaccine-certificate/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/validate-vaccine-certificate/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.fa523b89.chunk.css.map": "/validate-vaccine-certificate/static/css/main.fa523b89.chunk.css.map",
-    "static/js/2.c1478191.chunk.js.LICENSE.txt": "/validate-vaccine-certificate/static/js/2.c1478191.chunk.js.LICENSE.txt",
+    "static/css/main.f0e84019.chunk.css.map": "/validate-vaccine-certificate/static/css/main.f0e84019.chunk.css.map",
+    "static/js/2.597a7a0d.chunk.js.LICENSE.txt": "/validate-vaccine-certificate/static/js/2.597a7a0d.chunk.js.LICENSE.txt",
     "static/media/certificate-invalid.a9ac96af.svg": "/validate-vaccine-certificate/static/media/certificate-invalid.a9ac96af.svg",
     "static/media/certificate-valid.6e8564be.svg": "/validate-vaccine-certificate/static/media/certificate-valid.6e8564be.svg",
     "static/media/hexagon.ccad253f.png": "/validate-vaccine-certificate/static/media/hexagon.ccad253f.png",
@@ -24,10 +24,10 @@
     "static/media/zbar.wasm.bin": "/validate-vaccine-certificate/static/media/zbar.wasm.919afea9.bin"
   },
   "entrypoints": [
-    "static/js/runtime-main.71763e8d.js",
+    "static/js/runtime-main.6992a02e.js",
     "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.c1478191.chunk.js",
-    "static/css/main.fa523b89.chunk.css",
-    "static/js/main.9c4813ed.chunk.js"
+    "static/js/2.597a7a0d.chunk.js",
+    "static/css/main.f0e84019.chunk.css",
+    "static/js/main.cae4a706.chunk.js"
   ]
 }
