@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/HCCI-PS/validate-vaccine-certificate/static/css/main.fa523b89.chunk.css",
+    "main.js": "/HCCI-PS/validate-vaccine-certificate/static/js/main.00551d9a.chunk.js",
+    "main.js.map": "/HCCI-PS/validate-vaccine-certificate/static/js/main.00551d9a.chunk.js.map",
+    "runtime-main.js": "/HCCI-PS/validate-vaccine-certificate/static/js/runtime-main.b85893a4.js",
+    "runtime-main.js.map": "/HCCI-PS/validate-vaccine-certificate/static/js/runtime-main.b85893a4.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/HCCI-PS/validate-vaccine-certificate/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.a8f5e82b.chunk.js": "/HCCI-PS/validate-vaccine-certificate/static/js/2.a8f5e82b.chunk.js",
+    "static/js/2.a8f5e82b.chunk.js.map": "/HCCI-PS/validate-vaccine-certificate/static/js/2.a8f5e82b.chunk.js.map",
+    "static/js/3.dd5941e4.chunk.js": "/HCCI-PS/validate-vaccine-certificate/static/js/3.dd5941e4.chunk.js",
+    "static/js/3.dd5941e4.chunk.js.map": "/HCCI-PS/validate-vaccine-certificate/static/js/3.dd5941e4.chunk.js.map",
+    "index.html": "/HCCI-PS/validate-vaccine-certificate/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/HCCI-PS/validate-vaccine-certificate/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.fa523b89.chunk.css.map": "/HCCI-PS/validate-vaccine-certificate/static/css/main.fa523b89.chunk.css.map",
+    "static/js/2.a8f5e82b.chunk.js.LICENSE.txt": "/HCCI-PS/validate-vaccine-certificate/static/js/2.a8f5e82b.chunk.js.LICENSE.txt",
+    "static/media/certificate-invalid.a9ac96af.svg": "/HCCI-PS/validate-vaccine-certificate/static/media/certificate-invalid.a9ac96af.svg",
+    "static/media/certificate-valid.6e8564be.svg": "/HCCI-PS/validate-vaccine-certificate/static/media/certificate-valid.6e8564be.svg",
+    "static/media/hexagon.ccad253f.png": "/HCCI-PS/validate-vaccine-certificate/static/media/hexagon.ccad253f.png",
+    "static/media/loading.68d0272c.gif": "/HCCI-PS/validate-vaccine-certificate/static/media/loading.68d0272c.gif",
+    "static/media/next-arrow.2fe80e2d.svg": "/HCCI-PS/validate-vaccine-certificate/static/media/next-arrow.2fe80e2d.svg",
+    "static/media/qr-code.0d1efb4c.svg": "/HCCI-PS/validate-vaccine-certificate/static/media/qr-code.0d1efb4c.svg",
+    "static/media/verify-certificate.29230f43.png": "/HCCI-PS/validate-vaccine-certificate/static/media/verify-certificate.29230f43.png",
+    "static/media/zbar.wasm.bin": "/HCCI-PS/validate-vaccine-certificate/static/media/zbar.wasm.919afea9.bin"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b85893a4.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.a8f5e82b.chunk.js",
+    "static/css/main.fa523b89.chunk.css",
+    "static/js/main.00551d9a.chunk.js"
+  ]
+}
