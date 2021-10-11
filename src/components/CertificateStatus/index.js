@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import { useMsal } from "@azure/msal-react";
 import "./index.css";
 import CertificateValidImg from "../../assets/img/certificate-valid.svg";
 import CertificateInValidImg from "../../assets/img/certificate-invalid.svg";
@@ -56,11 +55,10 @@ const customLoader = url => {
     return documentLoader()(url);
 };
 
-export const CertificateStatus = ({certificateData, goBack}) => {
+export const CertificateStatus = ({certificateData, goBack, graphData}) => {
     const [isLoading, setLoading] = useState(false);
     const [isValid, setValid] = useState(false);
     const [data, setData] = useState({});
-    const {accounts} = useMsal();
     const history = useHistory();
 
     setTimeout(()=>{
@@ -77,7 +75,7 @@ export const CertificateStatus = ({certificateData, goBack}) => {
 
     useEffect(()=>{
         if(isValid){
-            var res = axios.post(serverUrl,{employeeName: accounts[0]?.name, Status:"Valid"});
+            var res = axios.post(serverUrl, {employeeName: graphData.displayName, Status:"Valid", email: graphData.mail});
             console.log(res);
         }
     },[isValid]);

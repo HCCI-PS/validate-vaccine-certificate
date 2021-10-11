@@ -35,7 +35,7 @@ export const VerifyCertificate = () => {
 
     useEffect(() => {
       if (graphData !== null) {
-        const func = async () => {
+        const func = async () => 
           const image = await GetUserAvatar(token, graphData.userPrincipalName);
           setAvatar(image);
         };
@@ -96,7 +96,7 @@ export const VerifyCertificate = () => {
                 <br/>
 
             {
-                result && <CertificateStatus certificateData={result} goBack={() => {
+                result && <CertificateStatus certificateData={result} graphData={graphData} goBack={() => {
                     setShowScanner(false);
                     setResult("");
                 }
