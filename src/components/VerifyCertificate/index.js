@@ -28,6 +28,7 @@ export const VerifyCertificate = () => {
       instance.acquireTokenSilent(request).then((response) => {
         setToken(response.accessToken);
         callMsGraph(response.accessToken).then((response) => {
+            console.log(response);
           setGraphData(response);
         });        
       });
@@ -35,7 +36,7 @@ export const VerifyCertificate = () => {
 
     useEffect(() => {
       if (graphData !== null) {
-        const func = async () => 
+        const func = async () => {
           const image = await GetUserAvatar(token, graphData.userPrincipalName);
           setAvatar(image);
         };

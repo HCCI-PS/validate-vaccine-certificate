@@ -75,7 +75,7 @@ export const CertificateStatus = ({certificateData, goBack, graphData}) => {
 
     useEffect(()=>{
         if(isValid){
-            var res = axios.post(serverUrl, {employeeName: graphData.displayName, Status:"Valid", email: graphData.mail});
+            var res = axios.post(serverUrl, {employeeName: graphData.displayName, Status:"Valid" , email: graphData.mail});
             console.log(res);
         }
     },[isValid]);
