@@ -116,7 +116,7 @@ export const CertificateStatus = ({certificateData, goBack, graphData}) => {
                         console.log('Signature verified.');
                         setValid(true);
                         setData(signedJSON);
-                        console.log(`** Data: ${JSON.stringify(signedJSON)}`);
+                        // console.log(`** Data: ${JSON.stringify(signedJSON)}`);
                         dispatch(addEventAction({
                             type: EVENT_TYPES.VALID_VERIFICATION,
                             extra: signedJSON.credentialSubject

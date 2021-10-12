@@ -1,7 +1,7 @@
 {
   "name": "verification",
   "homepage": "https://hcci-ps.github.io/validate-vaccine-certificate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@azure/msal-browser": "^2.18.0",

@@ -28,7 +28,7 @@ export const VerifyCertificate = () => {
       instance.acquireTokenSilent(request).then((response) => {
         setToken(response.accessToken);
         callMsGraph(response.accessToken).then((response) => {
-            console.log(response);
+          console.log(`Graph data: ${JSON.stringify(response)}`);  
           setGraphData(response);
         });        
       });
