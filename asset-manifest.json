@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/validate-vaccine-certificate/static/css/main.f0e84019.chunk.css",
-    "main.js": "/validate-vaccine-certificate/static/js/main.c044e2ce.chunk.js",
-    "main.js.map": "/validate-vaccine-certificate/static/js/main.c044e2ce.chunk.js.map",
+    "main.js": "/validate-vaccine-certificate/static/js/main.e2dbfc9c.chunk.js",
+    "main.js.map": "/validate-vaccine-certificate/static/js/main.e2dbfc9c.chunk.js.map",
     "runtime-main.js": "/validate-vaccine-certificate/static/js/runtime-main.2a3a35ea.js",
     "runtime-main.js.map": "/validate-vaccine-certificate/static/js/runtime-main.2a3a35ea.js.map",
     "static/css/2.ef9168ec.chunk.css": "/validate-vaccine-certificate/static/css/2.ef9168ec.chunk.css",
@@ -28,6 +28,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.e816ca32.chunk.js",
     "static/css/main.f0e84019.chunk.css",
-    "static/js/main.c044e2ce.chunk.js"
+    "static/js/main.e2dbfc9c.chunk.js"
   ]
 }
