@@ -203,7 +203,7 @@ export default class QRScanner extends Component {
                         this.video = ref;
                     }}
                 />
-                <canvas id="overlay" width={this.props.width} height={this.props.height}/>
+                <canvas id="overlay" className={this.video ? "viewFinderStyle":""} width={this.props.width} height={this.props.height}/>
             </div>
         );
     }
